@@ -1,0 +1,40 @@
+body{
+background-color:rgb(250, 250, 250);
+margin:0;
+
+}
+
+.input-box{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: 'futura';
+background-color: rgb(255, 255, 255);
+margin: auto;
+
+
+}
+
+input{
+font-family: 'futura';
+margin: 10px;
+border: none;
+border-radius: 20px;
+padding: 10px;
+background-color: rgb(169, 175, 163);
+max-width: 400px;
+
+}
+
+button{
+
+    font-family:'futura';
+    border:none;
+    padding:5px;
+    border-radius:5px;
+    background-color: rgb(189, 196, 183);
+}
+
+#IDweapon{
+    display: none;
+}
