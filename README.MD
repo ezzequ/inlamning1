@@ -3,3 +3,8 @@ Detta är min tolkning utav inlämnngen då vi fick fria händer att tolka den h
 
 jag har gjort så att användaren får svar apå några frågor som sedan skrivs ut och blir läsbar för användaren, sedan kan användaren göra olika val genom att trycka på respektive dörr för att se vad som finns bakom den. 
 
+github rep: https://github.com/ezzequ?tab=repositories
+demo: https://ezzequ.github.io/inlamning1/
+
+av: Esther Reichmann 2021
+
