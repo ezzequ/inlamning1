@@ -34,30 +34,27 @@ max-width: 400px;
 }
 
 button{
-
-    font-family:'futura';
-    border:none;
-    padding:5px;
-    border-radius:5px;
-    background-color: #FDC5F5;
+font-family:'futura';
+border:none;
+padding:5px;
+border-radius:5px;
+background-color: #FDC5F5;
 }
 
 #IDweapon{
-    display: none;
-<<<<<<< Updated upstream
-}
-=======
-    justify-content: center;
+display: none;
+justify-content: center;
 }
 
 #IDsuperpower{
-    display: none;
-    justify-content: center;
+display: none;
+justify-content: center;
+    
 }
 
 #IDname{
 
-    display: none;
+display: none;
 }
 
 
@@ -70,34 +67,34 @@ justify-content: center;
 }
 
 button{
-    color:white;
+color:white;
 }
 
 .spel1-buttons button{
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    }
+margin: 10px;
+padding: 10px;
+color: white;
+}
 
  button:hover{
 background-color:#F7AEF8;
 }
 
 #spel1-box{
-    display:flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 40px;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 400px;
-   margin-top: -300px;
-   position: absolute;
-   display: none;
-   color:#F7AEF8;
-   border-radius: 20px;
+display:flex;
+flex-direction: column;
+padding: 10px;
+margin: 40px;
+justify-content: center;
+text-align: center;
+background-color: rgb(255, 255, 255);
+width: 500px;
+height: 400px;
+margin-top: -300px;
+position: absolute;
+display: none;
+color:#F7AEF8;
+border-radius: 20px;
    
 
 }
@@ -113,159 +110,151 @@ padding: 10px;
 
 #userpick{
     
-   margin: 3px;
-   padding: 15px;
+margin: 3px;
+padding: 15px;
 }
 
 #randompick{
-
-    
-    margin: 3px;
-    padding: 15px;
+margin: 3px;
+padding: 15px;
  
 }
 
 #handsuser{
-   color:#72DDF7;
-    padding: 10px;
+color:#72DDF7;
+padding: 10px;
     
 }
 
 #handsuser i {
-    transform: rotateY(180deg);
-    font-size: 5em;
+transform: rotateY(180deg);
+font-size: 5em;
 }
 
 #handscomputer{
-    color: #8093F1;
-    padding: 10px;
+color: #8093F1;
+padding: 10px;
   
     
 }
 
 #handscomputer i{
-  font-size: 5em;
+font-size: 5em;
 }
 
 #Userhandscissor{
-    display:none
+display:none
 }
 
 #Userhandsrock{
-    display:none
+ display:none
 }
 
 #Userhandspaper{
-    display:none
+ display:none
 }
 
 
-  #Computerhandscissor{
-      display:none
+#Computerhandscissor{
+display:none
   }
   
-  #Computerhandsrock{
-      display:none
-  }
+#Computerhandsrock{
+display:none
+}
   
-  #Computerhandspaper{
-      display:none
-  }
+#Computerhandspaper{
+display:none
+}
 
 
-  #yourCharacter{
-      max-width: 500px;
-      margin: auto;
+#yourCharacter{
+max-width: 500px;
+margin: auto;
+display: none;
+display: flex;
+align-content: center;
+justify-content: center;
+text-align: center;
+}
 
-    display: none;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  #whowins{
-      color: #72DDF7;
-  }
+#whowins{
+color: #72DDF7;
+}
 
 
-  .background{
+.background{
+margin: auto;
+background-color:#72DDF7;
+padding-top: 50px;
+}
 
-    margin: auto;
-    background-color:#72DDF7;
-    padding-top: 50px;
-    
-  }
+.house{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color:#F7AEF8;
+padding-top: 10px;
+padding-right: 10px;
+padding-left: 10px;
+margin: auto;
+width: 700px;
 
-  .house{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-      background-color:#F7AEF8;
-      padding-top: 10px;
-      padding-right: 10px;
-      padding-left: 10px;
-      margin: auto;
-      width: 700px;
+}
 
-  }
+.ground{   
+padding: 20px;
+margin: 0;
+background-color: rgb(159, 235, 159);
+}
 
-  .ground{
+.doors{
+display: flex;
+flex-direction: row;
+padding: 15px;
+margin: 15px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+justify-content: space-evenly;
       
-      padding: 20px;
-      margin: 0;
+}
 
-    background-color: rgb(159, 235, 159);
-  }
-
-  .doors{
-      display: flex;
-      flex-direction: row;
-      padding: 15px;
-      margin: 15px;
-      margin-bottom: 0px;
-      padding-bottom: 0px;
-      justify-content: space-evenly;
-      
-  }
-
-  .door{
-
-    background-color: #B388EB;
-    padding: 45px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 0px;
-    height: 120px;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-  }
+.door{
+background-color: #B388EB;
+padding: 45px;
+margin-left: 15px;
+margin-right: 15px;
+margin-bottom: 0px;
+height: 120px;
+border-top-right-radius: 40px;
+border-top-left-radius: 40px;
+}
 
 .ROOF{
-    background-color:#F4F4ED;
-    width: 800px;
-    padding: 10px;
-    justify-content: center;
-    margin: auto;
-    border-radius: 30px;
+background-color:#F4F4ED;
+width: 800px;
+padding: 10px;
+justify-content: center;
+margin: auto;
+border-radius: 30px;
 }
 
 .ROOFMIDDLE{
-    background-color:#F4F4ED; 
-    width: 650px;
-    padding: 20px;
-    justify-content: center;
-    margin: auto;
-    border-radius: 30px;
+background-color:#F4F4ED; 
+width: 650px;
+padding: 20px;
+justify-content: center;
+margin: auto;
+border-radius: 30px;
 }
 
 .ROOFTOP{
-    background-color:#F4F4ED;
-    width: 400px;
-    padding: 25px;
-    justify-content: center;
-    margin: auto;
-    border-radius: 30px;
+background-color:#F4F4ED;
+width: 400px;
+padding: 25px;
+justify-content: center;
+margin: auto;
+border-radius: 30px;
 }
 
 .doors .handtag{
@@ -282,36 +271,36 @@ margin-left: 50px;
 }
 
 #start{
-    background-color: rgb(255, 255, 255);
-    border-style: double;
-    border-color:#72DDF7;
-    margin-bottom: auto;
-    border-width: 15px;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    margin: auto;
-    max-width: 12rem;
-    display: none;
-    color: #72DDF7;
+background-color: rgb(255, 255, 255);
+border-style: double;
+border-color:#72DDF7;
+margin-bottom: auto;
+border-width: 15px;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+align-content: center;
+margin: auto;
+max-width: 12rem;
+display: none;
+color: #72DDF7;
   
 }
 
 #guide{
-    background-color: green;
-    border-style: double;
-    border-color: rgb(4, 95, 34);
-    margin-bottom: auto;
-    border-width: 15px;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    margin: auto;
-    max-width: 12rem;
-    display: none;
-    border-radius: 10px;
+background-color: green;
+border-style: double;
+border-color: rgb(4, 95, 34);
+margin-bottom: auto;
+border-width: 15px;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+align-content: center;
+margin: auto;
+max-width: 12rem;
+display: none;
+border-radius: 10px;
   
 }
 
@@ -320,12 +309,10 @@ margin-left: 50px;
 }
 
 #closegame1{
-
-    background-color:#72DDF7;
-    color: white;
-    width: 150px;
-    border-radius: 40px;
-    text-align: center;
+background-color:#72DDF7;
+color: white;
+width: 150px;
+border-radius: 40px;
+text-align: center;
 }
 
->>>>>>> Stashed changes

@@ -49,9 +49,12 @@ function pickWeaponButton(){
 let inputWeapon = document.getElementById("inputWeapon").value.toLowerCase();
 let weaponQuestion = document.getElementById("IDweapon");
 let char = document.getElementById("pickweaponmessage").innerText
+let superpowerQuestion = document.getElementById("IDsuperpower")
 
  if (char=="mage" && (inputWeapon=="wand" || inputWeapon=="tome" || inputWeapon=="gemstone") ){
     weaponQuestion.style.display = "none"
+    superpowerQuestion.style.display = "block"
+
 }
 
    /* else if ( char=="mage" && inputWeapon!="wand" || inputWeapon!="tome" || inputWeapon!="gemstone"){
@@ -60,10 +63,12 @@ let char = document.getElementById("pickweaponmessage").innerText
 
  else if ( char=="warrior" && (inputWeapon=="bow" || inputWeapon=="dagger" || inputWeapon=="sword") ){
         weaponQuestion.style.display = "none"
+        superpowerQuestion.style.display = "block"
     }
 
   else if  ( char=="healer" && (inputWeapon=="antidote" || inputWeapon=="cloak" || inputWeapon=="sheild") ){
         weaponQuestion.style.display = "none"
+        superpowerQuestion.style.display = "block"
     }
 
     else{
@@ -75,12 +80,10 @@ let char = document.getElementById("pickweaponmessage").innerText
 
    console.log(char)
     console.log(inputWeapon)
-<<<<<<< Updated upstream
-=======
 
 
-// här har jag gjort en input där man kan välja en superktaft, den visar även dina tidigare val som du gjort innan. Här är meddelandet och nedanför i nästa
-//funktion så kommer inputen
+  /*här har jag gjort en input där man kan välja en superktaft, den visar även dina tidigare val som du gjort innan. Här är meddelandet och nedanför i nästa
+ funktion så kommer inputen*/
 function pickSuperpowerDisplayMessage(){
         let picksuperpowerMessage = document.getElementById("superpowersyoucanpick");
         let Weapon = document.getElementById("inputWeapon").value.toLowerCase();
@@ -110,7 +113,7 @@ function pickSuperpowerDisplayMessage(){
 
     }
 
-pickSuperpowerDisplayMessage()
+pickSuperpowerDisplayMessage();
     
 }
 
@@ -177,15 +180,11 @@ ShowYourCharacter.innerHTML = ( "Hello " + yourName + "! welcome to the game. yo
 //därför löste jag detta med en funktion jag kan använda mig av om och om igen istället för att göra en ny för varje element med nytt id
 function showDivOrElement(p){
     document.getElementById(p).style.display = 'block';
->>>>>>> Stashed changes
     
  
 }
 
 
-<<<<<<< Updated upstream
-    
-=======
 // funktion som gömmer en div, utan att man specifiserar ID. som man kan använda flera gånger i sin kod,
 // utan att behöva göra en ny funktiom för varje ID, gjorde denna funktionen för att junna använda den på alla mina 
 //dörrar i spelet, så att man kan stänga och öppna dom med enkla klick, man kan även göra en knapp utan <button> då jag ville att själva dörr divarna skulle fungera som en knapp utan att vara en knapp
@@ -202,7 +201,6 @@ function showDivAndChangeText(){
     document.getElementById('spelet').style.display = 'block';
     start.innerHTML = 'click on the doors to find out whats behind them!';
 }
->>>>>>> Stashed changes
 
 
  
