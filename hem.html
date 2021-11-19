@@ -6,41 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="./code.js"></script>
+<<<<<<< Updated upstream
+=======
+    <script defer src="./spel1.js"></script>
+    <script defer src="./spel2.js"></script>
+    <script defer src="./spel3.js"></script>
+    <script src="https://use.fontawesome.com/2012cc4524.js"></script>
+    <script src="https://kit.fontawesome.com/1ecf6754ff.js" crossorigin="anonymous"></script>
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./spel2.css">
+    <link rel="stylesheet" href="./spel3.css">
+
 </head>
 <body>
-    <!---
-    <p>Do you want to lock? </p>
-    <form>
-      <input id="r1" type="radio" name="question" value="yes" checked> warrior<br>
-      <input id="r2" type="radio" name="question" value="no"> Hufflepuff<br>
-      <input id="btn" type="submit" value="Submit">
-    </form><br><br>
-
-</div>
-<div id ="hidden-div">Hidden</div>
-
---->
+  
+    <!-- här visas alla frågor om karaktären, det är det ensa man ser innan resten av spelet börjar-->
 <div class="input-box">
-<div class="character" id="IDcharacter"> <h3>character </h3>
-    <h4>pick what kind of character you want to be, mage, warrior or healer?</h4>
-<input type="text" id="inputCharacter" name="inputCharacter"><button onclick="myFunction()">Character</button>
+    <div class="character" id="IDcharacter"> 
+     <h3>character </h3>
+     <h4>pick what kind of character you want to be, mage, warrior or healer?</h4>
+     <input type="text" id="inputCharacter" name="inputCharacter">
+     <button onclick="pickCharacterButton()">Character</button>
+    </div>
 
-</div>
+    <div class="weapon" id="IDweapon"> <h3> pick weapon</h3>
+     <p>character of choice:</p>
+     <h4 id="pickweaponmessage"></h4>
+     <h3 id="weaponsYouCanPick"></h3>
+     <input type="text" id="inputWeapon"name="inputWeapon">
+     <button onclick="pickWeaponButton()" id="weaponbutton">weapon</button> 
+    </div>
 
+<<<<<<< Updated upstream
 <div class="weapon" id="IDweapon"> <h3> weapon</h3>
+=======
+    <div class="superpower" id="IDsuperpower"> 
+     <h3>pick superpower</h3>
+     <p>character of choice:</p>
+     <h4 id="characterofcoice"></h4>
+     <p>weapon of choice:</p>
+     <h4 id="weaponofchoice"></h4>
+     <h3 id="superpowersyoucanpick"></h3>
+     <input type="text" id="inputSuperpower" name="inputSuperpower">
+     <button onclick="superpowerbutton()" id="superpowerbutton">superpower</button> 
+    </div>
+>>>>>>> Stashed changes
 
-    <p>character of choice:</p>
-    <h4 id="pickweaponmessage"></h4>
-    <h3 id="weaponsYouCanPick"></h3>
-    <input type="text" id="inputWeapon" name="inputWeapon"><button onclick="pickWeaponButton()" id="weaponbutton">weapon</button> 
-</div>
 
+<<<<<<< Updated upstream
 <div class="superpower">ff <button >Try it</button></div>
 
 <div class="characterName">ff <button>Try it</button></div>
+=======
+    <div class="yourName" id="IDname"> <h3>what do you want you name to be?</h3>
+     <input type="text" id="inputyourName" name="inputyourName"><button onclick="namebutton()" id="yourNamebutton">name</button> 
+    </div>
+
 </div>
 
+<!-- här visas alla val du gjort för din karaktär i ett hej meddelande-->
+<div id="yourCharacter">
+<h3><!-- text kommer att visas här ---></h3>
+</div>
+
+<!-- när du trycker på nappen så kommer et hus med dörrar att visas, där spelaren/användaren kan göra val om vilken dörr hen vill gå in igenom
+-->
+<div id="start" onclick="showDivAndChangeText()"> press me to play!</div>
+<div id="guide"> click on each door to find out whats behind them!</div>
+
+  <div id="hiddenelement">password is: pineapple-pen</div><!-- detta elementet syns bara när man hoovrar över det, eftersom det är en del i användar uplevelsen att spelaren måste integrera med musen över skärmen för att hitta lösenordet som bara syns när man har musen över den.-->
+
+  <!-- här är själva spelets riktiga början-->
+<div  id="spelet">
+
+    <!-- upplägget jag har gjort med dvarna gör så att det ser ut som ett hus med 3 dörrar när man öppnar den i med live server-->
+<div class="background">
+  <div class="ROOFTOP" id="ROOFTOP"></div>
+  <div class="ROOFMIDDLE" id="ROOFMIDDLE"></div>
+  <div class=ROOF id="ROOF"></div>
+<div class="house" id="house">
+ <div class="doors">
+     <!-- varje dörr har en egen upplevelse bakom sig-->
+ <div class="door" id="door1" onclick="showDivOrElement('spel1-box')">
+    <div id="spel1-box">
+     <h2>press the buttons to play! good luck</h2>
+
+     <div id="closegame1" ondblclick="hideDivOrElement('spel1-box')"> doubble tap me to close</div>
+
+     <div class=spel1-bilder>
+
+        <div id="handsuser"> 
+          <i id="Userhandspaper" class="fas fa-hand-paper"></i>
+          <i id="Userhandsrock"class="fas fa-hand-rock"></i>
+          <i id="Userhandscissor" class="fas fa-hand-scissors"> </i>
+          <div id="userpick">waiting</div>
+        </div> 
+
+        <div id="handscomputer"> 
+         <i id ="Computerhandspaper" class="fas fa-hand-paper"></i>
+         <i id="Computerhandsrock" class="fas fa-hand-rock"></i>
+         <i id="Computerhandscissor" class="fas fa-hand-scissors"></i> 
+         <div id="randompick">waiting</div>
+        </div>
+
+     </div> 
+
+        <div class="spel1-buttons"> 
+         <button value="stone">stone</button> <button value="bag">bag</button> <button value="scissor">scissor</button>
+        </div>
+         <div id="whowins"></div>
+    </div>
+        
+    <div class="handtag"></div>
+ </div>
+ <div id="door2" onclick="showDivOrElement('spel2-box')" class="door">
+    <!-- här måste användaren hitta lösenordet för att komma åt överasknngen-->
+    <div id= "spel2-box" >
+        <div id=closegame2 ondblclick="hideDivOrElement('spel2-box')">doubble tap me to close</div>
+
+        <div id="passwordbox">
+          <h3>you need a password! hoover over the page to find it!</h3>
+           <input type="text" id="inputpassword" name="password"> <button onclick="passwordbutton()">password</button>
+       </div>
+
+       <div id="surprise">
+          <video width="410" height="310" controls>
+          <source src="Thespongebobsquarepantsmovie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+       </div>
+    </div>
+    <div class="handtag"></div>
+ </div>
+ <div class="door" id="door3" onclick="showDivOrElement('spel3-box')">
+
+    <div id="spel3-box">
+      <!--- här får spelaren byra färg på valfritt element med knapparna-->
+      <div id="closegame1" ondblclick="hideDivOrElement('spel3-box')"> doubble tap me to close</div>
+
+        <h3>press the button to change the items color!</h3>
+        <button id="housebutton" onclick="changeDesign('house')">house</button>
+        <button id="doorbutton" onclick="changeDesign('door1')">door 1</button>
+        <button id="doorbutton" onclick="changeDesign('door2')">door 2</button>
+        <button id="doorbutton" onclick="changeDesign('door3')">door 3</button>
+        <button id="doorbutton" onclick="changeDesign('ROOF')">roof</button>
+        <button id="doorbutton" onclick="changeDesign('ROOFMIDDLE')">middle roof</button>
+        <button id="doorbutton" onclick="changeDesign('ROOFTOP')">top roof</button>
+        <button id="doorbutton" onclick="changeDesign('ground')">ground</button>
+        <button onclick="changeDesign('start')">guide button</button>
+
+    </div>
+
+ <div class="handtag"></div>
+
+ </div>
+ </div>
+
+
+>>>>>>> Stashed changes
+</div>
+<div class=ground id="ground"></div>
+
+<<<<<<< Updated upstream
+=======
+
+
+</div>
+</div>
+
+</div>
+>>>>>>> Stashed changes
     
 </body>
 </html>
